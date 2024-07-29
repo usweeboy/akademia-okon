@@ -1,0 +1,43 @@
+// Base
+@import 
+  './base/reset',
+  './base/fonts',
+  './base/vars',
+  './base/mixins',
+  './base/media',
+  './base/base'
+;
+
+// Blocks
+@import 
+  './blocks/header',
+  './blocks/header-burger',
+  './blocks/header-sticky',
+  './blocks/menu',
+  './blocks/advantages',
+  './blocks/products',
+  './blocks/products-card',
+  './blocks/brands',
+  './blocks/why-us',
+  './blocks/discount',
+  './blocks/detailed',
+  './blocks/select-window',
+  './blocks/hero',
+  './blocks/hero-slider',
+  './blocks/stock',
+  './blocks/cost-stock',
+  './blocks/types-glazing',
+  './blocks/comfort',
+  './blocks/special-glazing',
+  './blocks/portfolio',
+  './blocks/reviews-slider',
+  './blocks/reviews',
+  './blocks/recommendations',
+  './blocks/gifts',
+  './blocks/faq',
+  './blocks/our-contacts',
+  './blocks/more',
+  './blocks/footer',
+  './blocks/breadcrumbs',
+  './blocks/contacts'
+;

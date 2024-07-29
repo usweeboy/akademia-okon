@@ -1,0 +1,256 @@
+.contacts {
+  padding-bottom: 72px;
+  &__title {
+    margin-bottom: 32px;
+  } 
+  &__body {
+    background-color: rgba(210, 211, 211, 0.3);
+    padding: 20px;
+    display: flex;
+  }
+  &__content {
+    background-color: var(--color-light);
+    padding: 20px;
+    font-size: 18px;
+    max-width: 45%;
+    flex-basis: 45%;
+  }
+  & b {
+    font-weight: 600;
+  }
+  &__routes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+    &-link {
+      @include align-center;
+      gap: 12px;
+    }
+    & span {
+      font-size: 15px;
+      line-height: 22px;
+      font-weight: 500;
+    }
+  }
+  &__address {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  &__phone, &__email {
+    @include align-center;
+    gap: 10px;
+    color: var(--primary-color);
+    font-weight: 500; 
+    font-size: 16px;
+    margin-bottom: 10px;
+    & svg {
+      color: var(--color-gray);
+    }
+  }
+  &__email {
+    margin-bottom: 20px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    & p {
+      color: var(--color-gray);
+      font-size: 16px;
+    }
+  }
+  &__work-time {
+    margin-bottom: 12px;
+  }
+  &__requisites {
+    margin-bottom: 20px;
+  }
+  &__form {
+    &-label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    &-box {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    &-input {
+      border-radius: var(--border-radius);
+      border: 1px solid var(--color-gray-alt);
+      font-size: 16px;
+      padding: 14px;
+      color: var(--color-gray);
+    }
+    &-btn {
+      font-size: 16px;
+    }
+    &-policy {
+      font-size: 13px;
+      max-width: 300px;
+      & a {
+        display: inline;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__map {
+    max-width: 55%;
+    flex-basis: 55%;
+    // min-height: 100%;
+    // max-height: 100%;
+  }
+}
+
+@include tablet {
+  .contacts {
+    padding-bottom: 64px;
+    &__title {
+      margin-bottom: 22px;
+    } 
+    &__body {
+      padding: 18px;
+    }
+    &__content {
+      max-width: 50%;
+      flex-basis: 50%;
+      font-size: 16px;
+      padding: 18px;
+    }
+    &__routes {
+      margin-bottom: 14px;
+      &-link {
+        gap: 8px;
+      }
+      & span {
+        font-size: 13px;
+      }
+    }
+    &__phone, &__email {
+      font-size: 15px;
+    }
+    &__item {
+      & p {
+        font-size: 14px;
+      }
+    }
+    &__form {
+      &-label {
+        font-size: 12px;
+      }
+      &-input {
+        font-size: 14px;
+      }
+      &-btn {
+        font-size: 14px;
+      }
+      &-policy {
+        font-size: 12px;
+      }
+    }
+    &__map {
+      max-width: 50%;
+      flex-basis: 50%;
+    }
+  }
+}
+
+@include phablet {
+  .contacts {
+    padding-bottom: 52px;
+    &__title {
+      margin-bottom: 18px;
+    } 
+    &__body {
+      flex-direction: column;
+    }
+    &__content {
+      padding: 24px 20px 24px 20px;
+      max-width: 100%;
+      flex-basis: 100%;
+      order: 2;
+    }
+    &__map {
+      // min-height: 400px;
+      // max-height: 400px;
+      max-width: 100%;
+      flex-basis: 100%;
+      & iframe {
+        height: 400px;
+      }
+      order: 1;
+    }
+  }
+}
+
+@include mobile {
+  .contacts {
+    padding-bottom: 42px;
+    &__title {
+      margin-bottom: 15px;
+    } 
+    &__body {
+      padding: 16px;
+    }
+    &__content {
+      padding: 16px;
+      font-size: 14px;
+    }
+    &__routes {
+      max-width: 220px;
+      &-image {
+        width: 40px;
+        height: 40px;
+      }
+      &-link {
+        gap: 6px;
+      }
+      & span {
+        font-size: 12px;
+      }
+    }
+    &__address {
+      margin-bottom: 16px;
+    }
+    &__phone, &__email {
+      font-size: 14px;
+    }
+    &__phone {
+      margin-bottom: 8px;
+    }
+    &__email {
+      margin-bottom: 16px;
+    }
+    &__item {
+      & p {
+        font-size: 13px;
+      }
+    }
+    .contacts__requisites {
+      margin-bottom: 16px;
+    }
+    &__form {
+      &-label {
+        font-size: 11px;
+        margin-bottom: 6px;
+      }
+      &-input {
+        font-size: 13px;
+      }
+      &-btn {
+        font-size: 12px;
+      }
+      &-policy {
+        font-size: 10px;
+      }
+    }
+    &__map {
+      & iframe {
+        height: 300px;
+      }
+    }
+  }
+}
